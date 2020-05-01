@@ -40,6 +40,7 @@ namespace MainProject.Compresion
 
             string folder = string.Format(@"{0}Compressions\", AppContext.BaseDirectory.Substring(0, AppContext.BaseDirectory.IndexOf("bin")));
             string fullPath = folder + newName;
+            DirectoryInfo directory = Directory.CreateDirectory(folder);
 
             string content = "";
             foreach (var item in alphabet)
@@ -66,6 +67,7 @@ namespace MainProject.Compresion
         {
             string folder = string.Format(@"{0}Compressions\", AppContext.BaseDirectory.Substring(0, AppContext.BaseDirectory.IndexOf("bin")));
             string fullPath = folder + newName;
+            DirectoryInfo directory = Directory.CreateDirectory(folder);
             previous = "";
             for (int i = 0; i < text.Length; i++)
             {
