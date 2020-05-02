@@ -185,3 +185,4 @@ C:\Users\llaaj\Documents\Lab_Reposicion\MainProject\MainProject\obj\Debug\netcor
 C:\Users\llaaj\Documents\Lab_Reposicion\MainProject\MainProject\obj\Debug\netcoreapp3.1\MainProject.dll
 C:\Users\llaaj\Documents\Lab_Reposicion\MainProject\MainProject\obj\Debug\netcoreapp3.1\MainProject.pdb
 C:\Users\llaaj\Documents\Lab_Reposicion\MainProject\MainProject\obj\Debug\netcoreapp3.1\MainProject.genruntimeconfig.cache
+C:\GitHub\Lab_Reposicion\MainProject\MainProject\obj\Debug\netcoreapp3.1\MainProject.csprojAssemblyReference.cache

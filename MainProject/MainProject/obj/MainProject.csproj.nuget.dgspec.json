@@ -1,20 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\llaaj\\Documents\\Lab_Reposicion\\MainProject\\MainProject\\MainProject.csproj": {}
+    "C:\\GitHub\\Lab_Reposicion\\MainProject\\MainProject\\MainProject.csproj": {}
   },
   "projects": {
-    "C:\\Users\\llaaj\\Documents\\Lab_Reposicion\\MainProject\\MainProject\\MainProject.csproj": {
+    "C:\\GitHub\\Lab_Reposicion\\MainProject\\MainProject\\MainProject.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\llaaj\\Documents\\Lab_Reposicion\\MainProject\\MainProject\\MainProject.csproj",
+        "projectUniqueName": "C:\\GitHub\\Lab_Reposicion\\MainProject\\MainProject\\MainProject.csproj",
         "projectName": "MainProject",
-        "projectPath": "C:\\Users\\llaaj\\Documents\\Lab_Reposicion\\MainProject\\MainProject\\MainProject.csproj",
-        "packagesPath": "C:\\Users\\llaaj\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\llaaj\\Documents\\Lab_Reposicion\\MainProject\\MainProject\\obj\\",
+        "projectPath": "C:\\GitHub\\Lab_Reposicion\\MainProject\\MainProject\\MainProject.csproj",
+        "packagesPath": "C:\\Users\\edanP\\.nuget\\packages\\",
+        "outputPath": "C:\\GitHub\\Lab_Reposicion\\MainProject\\MainProject\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\llaaj\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\edanP\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -61,7 +64,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.200\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
         }
       }
     }

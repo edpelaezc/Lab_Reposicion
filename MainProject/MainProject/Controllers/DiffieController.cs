@@ -16,8 +16,8 @@ namespace MainProject.Controllers
     public class DiffieController : ControllerBase
     {
         // GET: api/Diffie/9/7        
-        [HttpGet("{a}/{b}", Name = "GetPublicKey")]
-        public void GetPublicKey([FromBody] string a, string b)
+        [HttpPost("{a}/{b}"), ActionName("GetPublicKey")]
+        public void GetPublicKey(string a, string b)
         {
             Diffie secretKey = new Diffie(int.Parse(a), int.Parse(b));
             DataCompressions.Instance.secretKey = secretKey.generateKey();
