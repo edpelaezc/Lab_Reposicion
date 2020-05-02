@@ -42,11 +42,11 @@ namespace MainProject.Controllers
             else if (method.ToLower().Equals("lzw"))
             {
                 LZW compressMethods = new LZW();
-                //compressMethods.GetText(result);
+                compressMethods.GetText(result);
                 //compressMethods.InitializeDictionary(name);
                 compressMethods.InitializeDictionary(textInBytes, name);
-                //compressMethods.Compress(textInBytes, name, file.FileName);
-                compressMethods.BuildLZW(textInBytes, name, file.FileName);                
+                compressMethods.Compress(textInBytes, name, file.FileName);
+                //compressMethods.BuildLZW(textInBytes, name, file.FileName);                
             }
         }
     }

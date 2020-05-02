@@ -113,6 +113,15 @@ namespace MainProject.Compresion
             {
                 writer.WriteByte(Last[0]);
             }
+
+            double compressedBytes = Last.Length;
+            double originalBytes = text.Length;
+            double rc = compressedBytes / originalBytes;
+            double fc = originalBytes / compressedBytes;
+            double percentage = rc * 100;
+
+            CompressionsCollection newElement = new CompressionsCollection(name, fullPath, rc, fc, percentage.ToString("N2") + "%");
+            DataCompressions.Instance.archivos.Insert(0, newElement);
         }
         public void Compress(byte[] text, string newName, string name)
         {

@@ -24,6 +24,7 @@ namespace MainProject.Controllers
 
         // GET: api/Bebida/5
         [HttpGet("{id}", Name = "Get")]
+
         public Bebida Get(string id)
         {
             return DataBebida.Instance.myTree.getElement(id);
