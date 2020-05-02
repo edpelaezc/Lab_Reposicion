@@ -2,6 +2,7 @@
 Recopilación de los mejores 5 laboratorios.
 Endpoints
 Árboles multicamino: BebidaController. LABORATORIO 1
+
 [GET]		https://localhost:44311/Bebida/
 Devuelve en una lista todos los elementos Bebida que se encuentran en el árbol
 
