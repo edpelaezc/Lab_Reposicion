@@ -31,9 +31,12 @@ namespace MainProject.Controllers
 
         // POST: api/Bebida
         [HttpPost]
-        public void Post([FromBody] Bebida value)
+        public void Post([FromBody] Bebida[] value)
         {
-            DataBebida.Instance.myTree.Add(value);
+            for (int i = 0; i < value.Length; i++)
+            {
+                DataBebida.Instance.myTree.Add(value[i]);
+            }            
         }
     }
 }
