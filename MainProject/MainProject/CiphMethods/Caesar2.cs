@@ -64,7 +64,7 @@ namespace MainProject.Cipher
             }
 
             //escribir archivo 
-            string folder = string.Format(@"{0}CipherResults\", AppContext.BaseDirectory.Substring(0, AppContext.BaseDirectory.IndexOf("bin")));
+            string folder = string.Format(@"{0}DiffieCipherResults\", AppContext.BaseDirectory.Substring(0, AppContext.BaseDirectory.IndexOf("bin")));
             string fullPath = folder + fileName;
             // crear el directorio
             DirectoryInfo directory = Directory.CreateDirectory(folder);
@@ -96,7 +96,7 @@ namespace MainProject.Cipher
             }
 
             //escribir archivo 
-            string folder = @"C:\LABORATORIO6\Descifrado\";
+            string folder = string.Format(@"{0}DiffieDecipherResults\", AppContext.BaseDirectory.Substring(0, AppContext.BaseDirectory.IndexOf("bin")));
             string fullPath = folder + fileName;
             // crear el directorio
             DirectoryInfo directory = Directory.CreateDirectory(folder);

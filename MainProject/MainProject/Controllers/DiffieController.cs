@@ -25,26 +25,8 @@ namespace MainProject.Controllers
 
 
         // POST: api/Diffie
-        [HttpPost]
-        public void caesar2([FromForm(Name = "file")] IFormFile file)
-        {
-            //lectura del archivo
-            var result = new StringBuilder();
-            using (var reader = new StreamReader(file.OpenReadStream()))
-            {
-                while (reader.Peek() >= 0)
-                    result.AppendLine(reader.ReadLine());
-            }
-
-            //elimina caracteres extra que stringbuilder coloca al final de la cadena
-            string text = result.ToString();
-            text = text.Remove(text.Length - 1);
-            text = text.Remove(text.Length - 1);
-            DataCompressions.Instance.caesarCipher.cifrarCesar(text, DataCompressions.Instance.secretKey, file.FileName);
-        }
-
-        [HttpPost]
-        public void caesar2Decipher([FromForm(Name = "file")] IFormFile file)
+        [HttpPost("{method}")]
+        public void caesar2([FromForm(Name = "file")] IFormFile file, string method)
         {
             var result = new StringBuilder();
             using (var reader = new StreamReader(file.OpenReadStream()))
@@ -53,12 +35,23 @@ namespace MainProject.Controllers
                     result.AppendLine(reader.ReadLine());
             }
 
-            //elimina caracteres extra que stringbuilder coloca al final de la cadena
-            string text = result.ToString();
-            text = text.Remove(text.Length - 1);
-            text = text.Remove(text.Length - 1);
-            DataCompressions.Instance.caesarCipher.descifrarCesar(text, DataCompressions.Instance.secretKey, file.FileName);
+            if (method == "cipher")
+            {
+                //elimina caracteres extra que stringbuilder coloca al final de la cadena
+                string text = result.ToString();
+                text = text.Remove(text.Length - 1);
+                text = text.Remove(text.Length - 1);
+                DataCompressions.Instance.caesarCipher.cifrarCesar(text, DataCompressions.Instance.secretKey, "DiffieCiph" + file.FileName);
+            }
+            else if (method == "decipher")
+            {
+                //elimina caracteres extra que stringbuilder coloca al final de la cadena
+                string text = result.ToString();
+                text = text.Remove(text.Length - 1);
+                text = text.Remove(text.Length - 1);
+                DataCompressions.Instance.caesarCipher.descifrarCesar(text, DataCompressions.Instance.secretKey, "DiffieDeciph" + file.FileName);
+            }
+            
         }
-       
     }
 }
