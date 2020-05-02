@@ -28,7 +28,9 @@ Envía el archivo que pasará por proceso de compresión, en este caso huffman. 
 Los archivos generados se guardan en el directorio del proyecto, ejemplo en mi computadora: C:\GitHub\Lab_Reposicion\MainProject\MainProject\Compressions
 
 [POST] 	https://localhost:44311/decompress/testDecompress.txt/huffman
+
 [POST]	https://localhost:44311/decompress/testDecompress.txt/lzw
+
 Métodos para descomprimir los archivos que se guardan en la carpeta Compressions del directorio del proyecto.
  
  
@@ -36,12 +38,15 @@ Métodos para descomprimir los archivos que se guardan en la carpeta Compression
 Cifrado de transposición. LABORATORIO 5
 
 [POST]	https://localhost:44311/cipher/ruta/textoCifrado.txt/6x5,vertical
+
 [POST]	https://localhost:44311/decipher/ruta/textoNormal.txt/6x5,vertical
 
 [POST]	https://localhost:44319/cipher/caesar/textoCifrado.txt/goblin
+
 [POST]	https://localhost:44319/decipher/caesar/textoNormal.txt/goblin
 
 [POST]	https://localhost:44319/cipher/zigzag/textoCifrado.txt/5
+
 [POST]	https://localhost:44319/decipher/zigzag/textoNormal.txt/5
 
  
