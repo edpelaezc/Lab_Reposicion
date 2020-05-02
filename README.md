@@ -13,7 +13,9 @@ Inserta una Bebida en el árbol B. Parámetros de postman:
 
 
 
-Compresión de Datos: CompressController, CompressionsController, DecompressController. LABORATORIO 3 y 4
+Compresión de Datos: CompressController, CompressionsController, DecompressController. 
+LABORATORIO 3 y 4
+
 [GET]		https://localhost:44311/compressions/
 Endpoint para visualizar los archivos comprimidos por el sistema. 
 [POST]	https://localhost:44311/compress/pruebaHuffman.huff/huffman
@@ -41,7 +43,7 @@ Cifrado de transposición. LABORATORIO 5
 [POST]	https://localhost:44319/decipher/zigzag/textoNormal.txt/5
 
  
- 
+Los archivos cifrados se generan en el directorio del proyecto, en la carpet CipherResults y en Decipher los archivos descifrados.
 
 
 
