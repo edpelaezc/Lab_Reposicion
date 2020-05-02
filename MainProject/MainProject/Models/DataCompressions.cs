@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MainProject.Cipher;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -18,5 +19,7 @@ namespace MainProject.Models
 		}
 
 		public List<CompressionsCollection> archivos = new List<CompressionsCollection>();
+		public int secretKey { get; set; }
+		public Caesar2 caesarCipher = new Caesar2();
 	}
 }

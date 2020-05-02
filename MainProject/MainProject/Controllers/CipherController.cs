@@ -14,6 +14,7 @@ namespace MainProject.Controllers
     [ApiController]
     public class CipherController : ControllerBase
     {
+        
         /// <summary>
         /// Request POST para cifrar texto.
         /// </summary>
