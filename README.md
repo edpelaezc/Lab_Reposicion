@@ -18,7 +18,9 @@ LABORATORIO 3 y 4
 
 [GET]		https://localhost:44311/compressions/
 Endpoint para visualizar los archivos comprimidos por el sistema. 
+
 [POST]	https://localhost:44311/compress/pruebaHuffman.huff/huffman
+
 [POST]	https://localhost:44311/compress/test.lzw/lzw	
 
 Envía el archivo que pasará por proceso de compresión, en este caso huffman. El formato es: /compress/nombre archivo comprimido/método
